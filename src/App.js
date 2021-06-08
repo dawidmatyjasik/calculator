@@ -1,10 +1,17 @@
-import "./App.css";
+import styled, { ThemeProvider } from "styled-components";
+import { GlobalStyle } from "./theme/globalStyles";
+import { theme } from "./theme/theme";
+
+const Styled = styled.h1`
+  color: ${(props) => props.theme.dark.color};
+`;
 
 function App() {
   return (
-    <div className="App">
-      <h1>Test</h1>
-    </div>
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <Styled>hej</Styled>
+    </ThemeProvider>
   );
 }
 
