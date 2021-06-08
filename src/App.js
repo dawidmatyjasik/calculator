@@ -1,6 +1,8 @@
 import styled, { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./theme/globalStyles";
-import { theme } from "./theme/theme";
+import { dark, light, violet } from "./theme/theme";
+import Header from "./components/Header";
+import Page from "./Page";
 
 const Styled = styled.h1`
   color: ${(props) => props.theme.dark.color};
@@ -8,9 +10,9 @@ const Styled = styled.h1`
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={dark}>
       <GlobalStyle />
-      <Styled>hej</Styled>
+      <Page />
     </ThemeProvider>
   );
 }
