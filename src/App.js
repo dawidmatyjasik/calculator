@@ -1,7 +1,7 @@
 import styled, { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./theme/globalStyles";
 import { dark, light, violet } from "./theme/theme";
-import Page from "./Page";
+import Page from "./Page/Page";
 import { useEffect, useState } from "react";
 
 function App() {

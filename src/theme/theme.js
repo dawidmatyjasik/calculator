@@ -14,8 +14,9 @@ export const dark = {
   },
   text: {
     keys: "hsl(360, 100%, 100%)",
+    content: "hsl(221, 14%, 31%)",
     del: "hsl(360, 100%, 100%)",
-    content: "hsl(360, 100%, 100%)",
+    sum: "hsl(360, 100%, 100%)",
   },
 };
 
@@ -35,8 +36,9 @@ export const light = {
   },
   text: {
     keys: "hsl(60, 10%, 19%)",
-    del: "hsl(0, 0, 100%)",
-    content: "hsl(0, 0, 100%)",
+    content: "hsl(60, 10%, 19%)",
+    del: "hsl(360, 100%, 100%)",
+    sum: "hsl(360, 100%, 100%)",
   },
 };
 
@@ -56,7 +58,8 @@ export const violet = {
   },
   text: {
     keys: "hsl(52, 100%, 62%)",
-    del: "hsl(198, 20%, 13%",
-    content: "hsl(0, 0, 100%)",
+    content: "hsl(52, 100%, 62%)",
+    del: "hsl(360, 100%, 100%)",
+    sum: "hsl(198, 20%, 13%)",
   },
 };
