@@ -5,7 +5,7 @@ const Result = () => {
   const [result, setResult] = useState(0);
   return (
     <>
-      <Screen type="text" className="screen" value={result} />
+      <Screen type="text" className="screen" value={result} readOnly />
     </>
   );
 };

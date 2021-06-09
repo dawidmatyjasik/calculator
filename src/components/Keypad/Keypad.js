@@ -4,20 +4,20 @@ import { KeypadContainer } from "./KeypadElements";
 const Keypad = () => {
   return (
     <KeypadContainer>
-      <Key name={"7"}></Key>
-      <Key name={"8"}></Key>
-      <Key name={"9"}></Key>
+      <Key name={7}></Key>
+      <Key name={8}></Key>
+      <Key name={9}></Key>
       <Key name={"DEL"} word></Key>
-      <Key name={"4"}></Key>
-      <Key name={"5"}></Key>
-      <Key name={"6"}></Key>
+      <Key name={4}></Key>
+      <Key name={5}></Key>
+      <Key name={6}></Key>
       <Key name={"+"}></Key>
-      <Key name={"1"}></Key>
-      <Key name={"2"}></Key>
-      <Key name={"3"}></Key>
+      <Key name={1}></Key>
+      <Key name={2}></Key>
+      <Key name={3}></Key>
       <Key name={"-"}></Key>
       <Key name={"."}></Key>
-      <Key name={"0"}></Key>
+      <Key name={0}></Key>
       <Key name={"/"}></Key>
       <Key name={"x"}></Key>
       <Key
