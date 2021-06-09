@@ -13,7 +13,7 @@ export const dark = {
     delShadow: "hsl(28, 16%, 65%)",
   },
   text: {
-    keys: "hsl(221, 14%, 31%)",
+    keys: "hsl(360, 100%, 100%)",
     del: "hsl(360, 100%, 100%)",
     content: "hsl(360, 100%, 100%)",
   },

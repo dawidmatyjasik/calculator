@@ -1,18 +1,36 @@
 import styled, { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./theme/globalStyles";
 import { dark, light, violet } from "./theme/theme";
-import Header from "./components/Header";
 import Page from "./Page";
-
-const Styled = styled.h1`
-  color: ${(props) => props.theme.dark.color};
-`;
+import { useEffect, useState } from "react";
 
 function App() {
+  const [counter, setCounter] = useState(0);
+  const [theme, setTheme] = useState(dark);
+  const handleMenu = () => {
+    switch (counter) {
+      case 0:
+        setTheme(dark);
+        break;
+      case 1:
+        setTheme(light);
+        break;
+      case 2:
+        setTheme(violet);
+        break;
+      default:
+        setTheme(dark);
+        break;
+    }
+  };
+  useEffect(() => {
+    handleMenu();
+  }, [counter]);
+
   return (
-    <ThemeProvider theme={dark}>
+    <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <Page />
+      <Page counter={counter} setCounter={setCounter} />
     </ThemeProvider>
   );
 }

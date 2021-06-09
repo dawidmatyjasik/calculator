@@ -7,7 +7,7 @@ export const HeaderSection = styled.header`
 `;
 
 export const HeaderTitle = styled.h1`
-  color: ${({ theme }) => theme.text.content};
+  color: ${({ theme }) => theme.text.keys};
   font-weight: 700;
   fon-size: 3rem;
   text-transform: lowercase;
@@ -30,11 +30,11 @@ export const HeaderMods = styled.div`
 `;
 
 export const HeaderMod = styled.h3`
-  color: ${({ theme }) => theme.text.content};
+  color: ${({ theme }) => theme.text.keys};
   font-size: 0.7rem;
 `;
 export const HeaderTheme = styled.h2`
-  color: ${({ theme }) => theme.text.content};
+  color: ${({ theme }) => theme.text.keys};
   font-size: 0.7rem;
   letter-spacing: 1px;
   margin-right: 20px;
@@ -49,11 +49,11 @@ export const HeaderWrapper = styled.div`
 `;
 export const HeaderCircle = styled.div`
   position: absolute;
-  background: red;
+  background: ${({ theme }) => theme.keys.toggleBackground};
   border-radius: 100%;
   top: 50%;
   transform: translateY(-50%);
-  left: 9%;
+  left: ${(props) => props.left}%;
   ${"" /* left: 9%; */}
   ${"" /* left: 37%; */}
   ${"" /* left: 66%; */}
@@ -68,9 +68,4 @@ export const HeaderSlider = styled.div`
   height: 25px;
   background-color: ${({ theme }) => theme.background.keypad};
   border-radius: 90px 90px 90px 90px;
-  ${
-    "" /* &:hover ${HeaderCircle} {
-    left: 60%;
-  } */
-  }
 `;
