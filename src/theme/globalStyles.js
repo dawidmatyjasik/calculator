@@ -15,4 +15,10 @@ body{
     height: 100%;
     background-color: ${(props) => props.theme.background.main};
 }
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
 `;
