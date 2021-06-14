@@ -1,11 +1,16 @@
-import { useState } from "react";
+import { useSelector } from "react-redux";
 import "./ScreenElements";
-import { Screen } from "./ScreenElements";
+import { PrevValue, Screen, Value } from "./ScreenElements";
 const Result = () => {
-  const [result, setResult] = useState(0);
+  const result = useSelector((state) => state.counter.value);
+  const prevResult = useSelector((state) => state.counter.prevValue);
+
   return (
     <>
-      <Screen type="text" className="screen" value={result} readOnly />
+      <Screen type="text" className="screen">
+        <PrevValue>{prevResult}</PrevValue>
+        <Value>{result}</Value>
+      </Screen>
     </>
   );
 };

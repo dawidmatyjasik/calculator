@@ -1,4 +1,4 @@
-import styled, { ThemeProvider } from "styled-components";
+import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./theme/globalStyles";
 import { dark, light, violet } from "./theme/theme";
 import Page from "./Page/Page";
