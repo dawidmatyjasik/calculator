@@ -54,7 +54,7 @@ export const counterSlice = createSlice({
     },
     total: (state) => {
       if (state.prevValue === 0) return;
-      state.value = state.prevValue;
+      state.value = state.prevValue + state.value;
       state.prevValue = 0;
     },
   },
